@@ -1,0 +1,118 @@
+$(document).ready(function(){
+    let desktopSize = window.matchMedia("(min-width: 376px)");
+    if (desktopSize.matches){
+        $(".container-2").hide(0)
+        $(".chiziq").hide();
+        $("#about").mouseenter(function(){
+            $(".chiziq-1").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-1").hide(0)
+        })
+        $("#careers").mouseenter(function(){
+            $(".chiziq-2").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-2").hide(0)
+        })
+        $("#events").mouseenter(function(){
+            $(".chiziq-3").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-3").hide(0)
+        })
+        $("#products").mouseenter(function(){
+            $(".chiziq-4").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-4").hide(0)
+        })
+        $("#support").mouseenter(function(){
+            $(".chiziq-5").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-5").hide(0)
+        })
+
+        $("#btn").mouseenter(function(){
+            $("#btn").css("background", "#000000")
+            $(".p-3").css("color", "#FFFFFF")
+        }).mouseleave(function(){
+            $("#btn").css("background", "none")
+            $(".p-3").css("color", "#000000")
+        })
+
+        $("#about-2").mouseenter(function(){
+            $(".chiziq-6").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-6").hide(0)
+        })
+        $("#careers-2").mouseenter(function(){
+            $(".chiziq-7").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-7").hide(0)
+        })
+        $("#events-2").mouseenter(function(){
+            $(".chiziq-8").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-8").hide(0)
+        })
+        $("#products-2").mouseenter(function(){
+            $(".chiziq-9").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-9").hide(0)
+        })
+        $("#support-2").mouseenter(function(){
+            $(".chiziq-10").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-10").hide(0)
+        })
+
+        $(".facebook").mouseenter(function(){
+            $(".chiziq-11").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-11").hide(0)
+        })
+        $(".twitter").mouseenter(function(){
+            $(".chiziq-12").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-12").hide(0)
+        })
+        $(".pinterest").mouseenter(function(){
+            $(".chiziq-13").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-13").hide(0)
+        })
+        $(".instagram").mouseenter(function(){
+            $(".chiziq-14").show(0)
+        }).mouseleave(function(){
+            $(".chiziq-14").hide(0)
+        })
+    }
+    else {
+        $(".container-2").hide(0)
+        $(".chiziq").hide();
+        $(".close").hide();
+        $(".hamburger").click(function(){
+            $(".close").show(0)
+            $(".hamburger").hide(0)
+            $(".container-2").show(0)
+            $(".hero-mobile").hide(0)
+            $(".block-1").hide(0)
+            $(".block-2").hide(0)
+            $(".block-3").hide(0)
+            $(".block-11").hide(0)
+            $(".block-5").hide(0)
+            $(".block-6").hide(0)
+            $(".block-7").hide(0)
+        })
+        $(".close").click(function(){
+            $(".close").hide(0)
+            $(".hamburger").show(0)
+            $(".container-2").hide(0)
+            $(".hero-mobile").show(0)
+            $(".block-1").show(0)
+            $(".block-2").show(0)
+            $(".block-3").show(0)
+            $(".block-11").show(0)
+            $(".block-5").show(0)
+            $(".block-6").show(0)
+            $(".block-7").show(0)
+        })
+    }
+});
